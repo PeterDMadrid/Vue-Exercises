@@ -1,14 +1,18 @@
 <script setup>
-const mymessage = "Yellow World"
-const myNumber = 100
-function add(x, y) {
-    return x + y
+// const myChannel = "https://vuejs.org/guide/introduction.html"
+// const image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
+// const altText = "dynamic alt"
+// const imageWidth = 400
+// const imageHeight = 400
+const imageInfo = {
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s',
+    alt: 'random text',
+    width: 500,
+    height: 500
 }
 </script>
 
 <template>
-    <h1>{{ mymessage }}</h1>
-    <h2>{{ myNumber }}</h2>
-    <h2>2 + 2 = {{ 2 + 2 }}</h2>
-    <h1>Add Two Numbers: {{ add(2, 5) }}</h1>
+    <a :href="myChannel">Vue guide</a>
+    <img :="imageInfo">
 </template>
